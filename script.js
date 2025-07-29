@@ -1,3 +1,3 @@
-function changetext(){
-    document.getelementbyid(title).innertext="you clicked the button!";
+function showMessage(){
+    alert("remember the goal!")
 }
