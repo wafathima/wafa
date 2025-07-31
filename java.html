@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        h1{
+            font-size: 50px;
+            color: black;
+            text-align: center;
+            text-decoration: underline;
+        }
+        button{
+            background-color: black;
+            color:aliceblue ;
+            padding-left: 17px;
+            padding-right: 17px;
+            border-radius: 10px;
+            font-size: 25px;
+        }
+        p{
+            font-size: 25px;
+        }
+        h3{
+            font-size: 40px;
+        }
+        #demo4{
+            color: azure;
+            font-style: italic;
+            font-weight: bold;
+        }
+       #demo5{
+            color: azure;
+            font-style: italic;
+            font-weight: bold;
+        }
+         
+    </style>
+    
+</head>
+<body>
+     <h1>Javascript Parctice</h1>
+    <p id="demo"></p>
+   <script> document.getElementById('demo').innerHTML=""</script>
+   <button onclick="showMessage()">click</button>
+   <script src="java.js"></script>
+
+    <p id="demo1"></p>
+             <script>
+              function myFunction (p1, p2){
+            return p1 * p2;
+               }
+               let result= myFunction(3,4);
+                document.getElementById("demo1").innerHTML = result;
+             </script>
+
+             <p id="demo2"></p>
+            <script>
+                let x = myFunction(4,8);
+                document.getElementById("demo2").innerHTML = x;
+
+                function myFunction(a,b){
+                    return a * b;
+                }
+            </script>
+
+            <p id="demo3"></p>
+            <script>
+                function toCelsius(f){
+                    return (5/9) * (f-32);
+                }
+                let value = toCelsius(77);
+                document.getElementById("demo3").innerHTML=value;
+            </script>
+
+            <h3>*statements</h3>          
+            <button type="button" onclick="myFunction()">click it</button>
+             <p id="demo4"></p>
+             <p id="demo5"></p>
+              <script>
+                function myFunction(){
+                    document.getElementById("demo4").innerHTML = "Client-Side Scripting";
+                    document.getElementById("demo5").innerHTML = "It is lightweight and executes quickly.";
+                }
+            </script>
+
+           <p id="demo6"></p> 
+           <script>
+            let X, y, z;
+            X = 4;"."
+            y = 3;
+            z = X + y;
+
+            document.getElementById("demo6").innerHTML = "value of z is" + z + ".";
+           </script>
+
+           <p id="demo7"></p>
+           <script>
+            let a, b, c;  a = 5;  b = 7; c = a + b; 
+            document.getElementById("demo7").innerHTML ="value of c is"+ c + ".";
+         </script>
+         <p id="demo8"></p>
+         <script>
+            document.getElementById("demo8").innerHTML =(5 + 7) * 10;
+         </script>
+            
+</body>
+</html>

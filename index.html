@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         body{
-            background-color: rgb(139, 252, 69);
+            background-color: rgb(173, 233, 136);
         }
         #title{
             font-size: 40px;
@@ -24,6 +24,15 @@
             border-radius: 500px;
             background-size: 60px;
         }
+        #text{
+    font-size: larger;
+    font-style: italic;
+    color:brown ;
+}
+h3{
+    font-size: larger;
+    font-weight: bold;
+}
        
     </style>
 </head>
@@ -34,37 +43,23 @@
     <button onclick="showMessage()">click</button>
     <script src="script.js"></script>
 
-    <button type="button"
-     onclick="document.getElementById('demo').innerHTML= Date()">time&date</button>
-     <p id="demo"></p>
-     <p id="demo"></p>
-     <script>
-        var x=4
-        var y=6
-        var z=x+y
-        document. getElementById('demo').innerHTML= "The value of z is:"+z;
-        </script>
-        <p id="number"></p>
-        <script>
-            const price1= 5;
-            const price2= 3;
-            let total = price1 + price2;
-            document. getElementById("number").innerHTML= "the total is:"+total;
-             </script>
+   <button type="button" onclick="document.getElementById ('demo'). innerHTML=Date();"> just click</button>
+   <p id="demo"></p>
+   <p id="demo1"></p>
+   <script>
+   var x=9
+  var  y=5
+   var z=x+y
+   document.getElementById('demo1').innerHTML =" value of z is:" +z;
+   </script>
+    
              <p id="text"></p>
              <script>
                 let carName="BMW";
                 document.getElementById ('text').innerHTML= carName;
              </script>
              <h3>javascript function</h3>
-             <p id="function"></p>
-             <script>
-                function myfunction(p1,p2){
-                    return p1*p2
-                }
-                let result= myfunction(5,7);
-                document.getElementById("function").innerHTML=result;
-             </script>
+            
     <h3>arrays</h3>
     <p id="Arrays"></p>
     <script>
@@ -83,6 +78,7 @@
         const person={firstName:"ayesha" , lastName:"raha" , age:"23"}
         document.getElementById('person').innerHTML =person.firstName;
     </script>
+     
     
 </body>
 </html>
