@@ -1,72 +1,192 @@
-body{
-    background-color:blanchedalmond;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+@media (max-width:700px) {
+  
 }
-#title{
-    color: black;
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+body{
+    background-color: white;
+}
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: 'Times New Roman',  serif;
+    box-sizing: border-box;
+}
+.header{
+    position: fixed;
+    color: rgb(7, 72, 7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100%;
+}
+.logo{
+    color:rgb(4, 28, 85);
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bolder;
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: azure;
+    font-weight: 400px;
+    font-size: 18px;
+    margin-right:29px ;
+    transition: 0.5s;
+}
+.navbar a:hover{
+    color: rgb(242, 198, 111);
+    
+}
+#home{
+    height: 100vh;
+    background: linear-gradient(-90deg, rgb(4, 28, 85)65%, white 35% );
+     display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 0, 10%;
+    
+}
+
+.name{
+    font-size: 55px;
+    color:rgb(223, 226, 232) ;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.home-sci i{
+    color: rgb(250, 252, 255);
+     
+}
+.home-sci i:hover{
+    background-color: aquamarine;
+}
+
+.home-image{
+    width: 600px;
+    height: 650px;
+   margin: 30px;
+   background-color: rgb(4, 28, 85);
+   border-radius: 60px;
+   position: relative;
+}
+.para2{
+    color: white;
+    font-size: larger;
+}
+.about-content{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 28px;
+   background-color:  rgb(4, 28, 85);
+   color: white;
+   padding-bottom: 30px;
+   padding-top: 30px;
+  
+  
+}
+h1{
+    padding-bottom: 50px;
+    color:  rgb(242, 198, 111); 
+    font-weight: 400;
+}
+.para3{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+     
+}
+.skill-content{
+ margin-top: 60px;
+    text-align: center;
+    font-size: 28px;
+   background-color:  rgb(4, 28, 85);
+   color:white;
+   padding-bottom:30px;
+   padding-top: 30px;
+    
+}
+h3{
+    padding-bottom:14px;
+}
+.para4{
+    padding-bottom: 25px;
+}
+.para5{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+  background-color: white;
+  color:  rgb(4, 28, 85);
+} 
+.work-content{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 28px;
+   background-color:rgb(4, 28, 85) ;
+   color:white; 
+   padding-bottom:30px;
+   padding-top: 30px;
+}
+.education-content{
+  margin-top: 60px;
+    text-align:center;
+    font-size: 28px;
+   background-color:rgb(4, 28, 85) ;
+   color:white; 
+   padding-bottom:30px;
+   padding-top: 30px;
+   
+   
+}  
+.title5{
+  font-weight: lighter;
+  color: white;
+}
+.year{
+    color: rgb(196, 196, 190);
+}
+#contact{
+  margin-top: 60px;
+    text-align:center;
+    font-size: 28px;
+   background-color:rgb(4, 28, 85) ;
+   color:white; 
+   padding-bottom:30px;
+   padding-top: 30px;  
+}
+.title6{
+    
+     padding-bottom: 50px;
+    color:  rgb(242, 198, 111); 
+    font-weight: 400;
 }
 button{
-    font-size: 20px;
-    padding: 20px 20px;
-    cursor: pointer;
+    background-color: rgb(242, 198, 111) ;
+    color:rgb(4, 28, 85); 
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    font-size: 16px;
 }
- document.getElementById("demo6").innerHTML = "the value of z is" + z + ".";
-           </script>
-
-           <p id="demo7"></p>
-           <script>
-            let a, b, c;
-            a = 5;
-             b = 7;
-              c = a + b;
-            document.getElementById("demo7").innerHTML = "value of c" + C +".";
-           </script>
-            
-            <p id="demo3"></p>
-            <script>
-                function toCelsius(f){
-                    return (5/9) * (f-32);
-                }
-                let value = toCelsius(78);
-                document.getElemrntById("demo3").innerHTML=value;
-            </script>
-
-             <p id="demo1"></p>
-             <script>
-              function myFunction (p1, p2){
-            return p1 * p2;
-               }
-               let result= myFunction=(3,4);
-                document.getElementById("demo1").innerHTML = result;
-             </script>
-
-             <p id="demo2"></p>
-            <script>
-                let x = myFunction(5,8);
-                document.grtElementById("demo2").innerHTML = x;
-
-                function myFunction(a,b){
-                    return a * b;
-                }
-            </script>
-
-            <h3 class="para1">I am a passionate and dedicated Full Stack Development student<br>
-   with a strong interest in building responsive, user-friendly web applications.<br>
-     I enjoy working on both front-end and back-end technologies,<br>
-   and I’m constantly learning new tools and frameworks to improve my skills.<br> 
-    My goal is to create impactful digital experiences by combining clean code with<br>
-   creative design.Whether it's designing a sleek UI or solving a complex problem<br> 
-   on the server side, I strive to deliver high-quality work. I'm currently<br> 
-      seeking opportunitiesto grow as a developer and contribute to real-world projects.</h3>
-
-      .para1{
-    color:white;
-    text-align:left;
-   margin-left: 600px;
-   font-size: 25px;
-   margin-top: 30px;
-   font-weight:500 ;
+button:hover{
+    background-color: rgb(5, 141, 48);
+}
+footer{
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    padding-top:30px ;
+    
+}
+.footer{
+    font-size:medium;
+    color: aliceblue;
+    padding-top: 30px;
 }
