@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Portfolio</title>
     <link href="portfolio.css" rel="stylesheet" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+  
 </head>
 <body>
      
    <header class="header">
     <a href="#" class="logo">WAFA FATHIMA </a>
      <nav class="navbar">
-        <a href="#" class="item1">Home</a>
-        <a href="#" class="item2">About</a>
-        <a href="#" class="item3">Skill</a>
-        <a href="#" class="item4">Work</a>
-        <a href="#" class="item5">Education</a>
-        <a href="#" class="item6">Contact</a>
+        <a href="#home" class="item1">Home</a>
+        <a href="#about" class="item2">About</a>
+        <a href="#skill" class="item3">Skill</a>
+        <a href="#work" class="item4">Work</a>
+        <a href="#Education" class="item5">Education</a>
+        <a href="#contact" class="item6">Contact</a>
      </nav>
    </header>
    
-   <section class="home"> 
+   <section id="home"> 
         <div class="home-image">
             <img src="photo.png">
         </div>
@@ -31,14 +31,10 @@
   <h1 class="name" >Hi, I'm Wafa Fathima </h1>
   <p class="para2">I'm a full stack student in <br>zaithoon international girls campus,kannur</p>
    
-         <div class="home-sci">
-            <a href="#"><i class="fa-brands fa-square-facebook fa-3x"></i></a>
-            <a href="#"><i class="fa-brands fa-square-x-twitter fa-3x"></i></a>
-            <a href="#"><i class="fa-brands fa-square-instagram fa-3x"></i></a>
-          </div>
+       
         </div>
         </section>
-       <section class="about">
+       <section id="about">
          <div class="about-content">
             <h1><u>About</u></h1>
             <p class="para3">I am a passionate and dedicated Full Stack Development student<br>
@@ -51,7 +47,7 @@
       seeking opportunitiesto grow as a developer and contribute to real-world projects.</p>
          </div>
        </section>
-       <section class="skill">
+       <section id="skill">
          <div class="skill-content">
          <h1> <u>skill</u></h1>
           <h3>Technical Skills </h3>
@@ -59,15 +55,15 @@
          <p class="para5">HTML5 80%<br>CSS 85% <br>JAVASCRIPT 30%</p>
          </div>
        </section>
-       <section class="work">
+       <section id="work">
          <div class="work-content"> 
            <h1><u>Work</u></h1>
            <img src="starbucks.png" width="800px" height="400px">
            <h2>Starbucks</h2>
-           <p class="para6"> This is copy of starbucks website<br>this is not responsive</p>
+           <p class="para6"> This is copy of starbucks website<br>this is not responsive.</p>
          </div>
        </section>
-       <section class="Education">
+       <section id="Education">
         <div class="education-content">
          <h1><u>Education</u></h1>
           <h3 class="year">2023-24</h3>
@@ -77,9 +73,10 @@
           <p class="title5">Political Commerce</p>
         </div>
        </section>
-       <section class="contact">
+       <section id="contact">
          <h2 class="title6"><u>Contact Us</u></h2>
-         <form class="contact-content" onsubmit="Submitform(event)"></form>
+         <form class="contact-content" onsubmit="Submitform(event)">
+      
          <label for="name">NAME:</label>
          <input type="name" id="name" name="name" required>
           
@@ -88,7 +85,17 @@
           
          <label for="message">MESSAGE:</label>
          <input type="message" id="message" name="message"rows="5" required>
+         <button type="submit">SUBMIT</button>
+      </form>
        </section>
-
+       <footer>
+<div class="home-sci">
+            <a href="#"><i class="fa-brands fa-square-facebook fa-3x"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter fa-3x"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram fa-3x"></i></a>
+          </div>
+         <h1 class="footer">©2025 wafa fathima. All rights reserved</h1>
+       </footer>
+  
 </body>
 </html>

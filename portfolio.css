@@ -1,3 +1,7 @@
+@media (max-width:700px) {
+  
+}
+
 body{
     background-color: white;
 }
@@ -25,6 +29,7 @@ body{
     font-size: 40px;
     text-decoration: none;
     font-weight: bolder;
+    
 }
 .navbar a{
     text-decoration: none;
@@ -38,7 +43,7 @@ body{
     color: rgb(242, 198, 111);
     
 }
-.home{
+#home{
     height: 100vh;
     background: linear-gradient(-90deg, rgb(4, 28, 85)65%, white 35%);
      display: flex;
@@ -54,17 +59,9 @@ body{
     justify-content: center;
     
 }
-/* h1{
-   color:white;
-     text-align:center;
-   margin-left: 600px;
-   font-size: 30px; 
-   font-size: 35px;
-   justify-content: center; 
-  
-} */
+
 .home-sci i{
-    color:rgb(240, 242, 245);
+    color: rgb(250, 252, 255);
      
 }
 
@@ -150,7 +147,7 @@ h3{
 .year{
     color: rgb(149, 149, 146);
 }
-.contact{
+#contact{
   margin-top: 60px;
     text-align:center;
     font-size: 28px;
@@ -165,4 +162,27 @@ h3{
     color:  rgb(242, 198, 111); 
     font-weight: 400;
 }
-
+button{
+    background-color: rgb(242, 198, 111) ;
+    color:rgb(4, 28, 85); 
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    font-size: 16px;
+}
+button:hover{
+    background-color: rgb(13, 177, 65);
+}
+footer{
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    padding-top:30px ;
+    
+}
+.footer{
+    font-size:medium;
+    color: aliceblue;
+    padding-top: 30px;
+}
