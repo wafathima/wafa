@@ -52,3 +52,21 @@ button{
                     return a * b;
                 }
             </script>
+
+            <h3 class="para1">I am a passionate and dedicated Full Stack Development student<br>
+   with a strong interest in building responsive, user-friendly web applications.<br>
+     I enjoy working on both front-end and back-end technologies,<br>
+   and I’m constantly learning new tools and frameworks to improve my skills.<br> 
+    My goal is to create impactful digital experiences by combining clean code with<br>
+   creative design.Whether it's designing a sleek UI or solving a complex problem<br> 
+   on the server side, I strive to deliver high-quality work. I'm currently<br> 
+      seeking opportunitiesto grow as a developer and contribute to real-world projects.</h3>
+
+      .para1{
+    color:white;
+    text-align:left;
+   margin-left: 600px;
+   font-size: 25px;
+   margin-top: 30px;
+   font-weight:500 ;
+}
