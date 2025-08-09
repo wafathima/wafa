@@ -6,16 +6,16 @@
     <title>Document</title>
     <style>
         body{
-            background-color: burlywood;
+            background-color: rgb(241, 63, 57);
         }
         h1{
             font-size: 50px;
-            color: black;
+            color: rgb(246, 240, 240);
             text-align: center;
             text-decoration: underline;
         }
         button{
-            background-color: black;
+            background-color: rgb(245, 149, 149);
             color:aliceblue ;
             padding-left: 17px;
             padding-right: 17px;
@@ -46,8 +46,18 @@
      <h1>Javascript Parctice</h1>
     <p id="demo"></p>
    <script> document.getElementById('demo').innerHTML=""</script>
+   
+   <p id="demo9"></p>
+
    <button onclick="showMessage()">click</button>
-   <script src="java.js"></script>
+  <script>function showMessage(){
+alert("keep working hard..!")
+}
+</script>
+
+  <button type="button" onclick="document.getElementById('demo9').innerHTML=Date()">
+   click here to show date and time
+  </button>
 
     <p id="demo1"></p>
              <script>
@@ -91,7 +101,7 @@
            <p id="demo6"></p> 
            <script>
             let X, y, z;
-            X = 4;"."
+            X = 4;
             y = 3;
             z = X + y;
 
@@ -107,6 +117,19 @@
          <script>
             document.getElementById("demo8").innerHTML =(5 + 7) * 10;
          </script>
+       
+       <p class="demo0"></p>
+       <script>
+        let a;
+        console.log(a)
+       </script>
+       <script>
+        function myFunction(a){
+            a+=5
             
+        }
+        myFunction(10)
+
+       </script>
 </body>
-</html>
+</html>                                           

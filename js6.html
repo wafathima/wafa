@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+        #div{
+            background-color: rgb(234, 137, 137);
+            width: 150px;
+            padding: 50px;
+            text-align: center;
+           
+        }
+    </style>
+</head>
+<body>
+    <p id="demo"></p>
+   
+    <script>
+        document.getElementById("demo").innerHTML= "YOU ARE WELCOME";
+       
+    </script>
+     <h2>hellooo</h2>
+        <script>
+         document.querySelector('h2').textContent="HELLO EVERYONE!";
+         </script>
+
+        <p id="para">if you click this button you can see the change </p>
+        <button id="button">click here</button>
+       <script>
+        const paraghraph= document.getElementById("para");
+        const button1=document.getElementById("button");
+
+        button.addEventListener("click",function(){
+            paraghraph.innerHTML="now its changed!";
+        });
+       </script>
+        
+
+
+        <button onclick="myFunction()">try it!</button>
+        <div id="div">
+            if you click 'try it' this box will hide!
+        </div>
+
+        <script>
+            function myFunction(){
+                var x=document.getElementById("div");
+                    if(x.style.display==="none"){
+                     x.style.display ="block";   
+                    }else {
+                        x.style.display="none";
+                    }
+            }
+        </script>
+
+ <h2>type your message:</h2>
+ <input type="text" id="inputBox" placeholder="enter here.."/>
+  <button id="showButton">show message</button> 
+
+  <p id="output"></p>   
+<script>
+    const inputBox= document.getElementById("inputBox");
+    const button= document.getElementById("showButton");
+    const output= document.getElementById("output");
+
+    button.addEventListener("click", function() {
+    const userIntput = inputBox.value;
+    output.innerText="You typed: " +userInput;
+}); 
+</script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heading{
+            font-size: 40px;
+            text-align: center;
+            color: brown;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showmessage()">CLICK</button>
+     <script>
+      function showmessage(){
+        alert("accept the privet terms!")
+      }
+     </script>
+
+    <h2 id="heading">Javascript</h2>
+    <h3> DAY 1</h3>
+    <h2><a href=""></a></h2> 
+    <p id="demo"></p>
+    <script>
+      x = 3;
+      y = 6;
+      z = x + y;
+      document.getElementById("demo").innerHTML="3 + 6 =  " +z; 
+    </script>
+
+     <p id="demo1"></p>
+    <script>
+      var x = 5;
+      var y = 8;
+      var z = x + y;
+      document.getElementById("demo1").innerHTML="the value of 5  +  8  = " +z; 
+    </script>
+     
+     <p id="demo2"></p>
+   <script>
+    let x, y, z;
+    x = 20;
+    y = 30;
+    z = x + y
+    document.getElementById("demo2").innerHTML="20 + 30 = " +z;
+   </script>
+
+    <p id="demo3"></p>
+    <script>
+        const cars=["toyota","bmw","audi"]
+        cars[0]="benz";
+        cars.push("rolls royce");
+        document.getElementById("demo3").innerHTML=cars;
+    </script>
+
+<p id="demo4"></p>
+<script>
+  try{
+    const cars=["toyota","bmw","audi"];
+    cars = ["volvo","bmw","benz"];
+  }
+  catch (err){
+    document.getElementById("demo4").innerHTML=err;
+  }
+</script>
+
+<p id="demo5"></p>
+<script>
+  const car = {type:"porsche", color:"white", model:"911"};
+  car.color="red";
+  car.owner="me";
+  document.getElementById("demo5").innerHTML="car color is:" + car.color;
+</script>
+
+<p id="demo6"></p>
+<script>
+  const X = 10; 
+  {
+    const X = 2;
+  }
+  document.getElementById("demo6").innerHTML = "X is " + X;
+</script>
+
+<p id="demo7"></p>
+<script>
+  bikename="rx100";
+  document.getElementById("demo7").innerHTML= bikename;
+  var bikename;
+</script>
+<h5>check console</h5>
+<script>
+  console.log("name");
+</script>
+
+ <script>
+  const about= {fristname:"wafa", lastname:"fathima"}
+  console.log("about");
+ </script>
+
+<script>
+  const a = 57;
+  const b = 28;
+  console.log (a + b);
+</script>
+
+<script>
+  const c= "16";
+  const d="4";
+  console.log (c+d);
+</script>
+
+<script>
+  const e =10;
+  const f = 2;
+  console.log(e/f);
+</script>
+
+
+<script>
+console.log(15 + 4);
+console.log(2*3);
+console.log(30-8);
+console.log(10/5);
+</script>
+
+<p id="demo10"></p>
+<script>
+ let
+ E = 354
+ document.getElementById("demo10").innerHTML=E;
+</script>
+
+<p id="demo11"></p>
+<script>
+  let p = 20;
+  let q = 45;
+  let r = p + q;
+  document.getElementById("demo11").innerHTML= +r;
+</script>
+
+<P id="demo12"></P>
+<script>
+  let s=4
+  let i=(100+3)*4;
+  document.getElementById("demo12").innerHTML=i;
+</script>
+
+<p id="demo13"></p>
+<script>
+  let no1= "one";
+  let no2= "two";
+  let result = no1 < no2;
+  document.getElementById("demo13").innerHTML= "is the one is less then two?" +result;
+</script>
+
+<p id="demo14"></p>
+<script>
+  let letter1="30";
+  let letter2="7";
+  let result1 = letter1 > letter2;
+  document.getElementById("demo14").innerHTML="is the 30 is greater than 7?"+result;
+</script>
+
+<p id="demo15"></p>
+<script>
+  let text1="wafa";
+  let text2="fathima";
+  let text3= text1+" "+text2;
+  document.getElementById("demo15").innerHTML=text3;
+</script>
+</body>
+</html>

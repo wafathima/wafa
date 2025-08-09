@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p> go and check console..</p>
+    <script>
+    let i=0;
+    while (i < 4){
+    console.log('while exmpl',+i);
+    i++;
+    }
+    </script>
+
+    <script>
+      for(let i=1; i<=3; i++){
+        console.log('for example',i);
+      }
+    </script>
+  
+  <script>
+   let i1=0;
+  do{
+    console.log("do while:" +i);
+    i++;
+  }
+  while (i < 5);
+  </script>
+
+<script>
+  let car=["benz","volvo","BMW"];
+  for (let cars of car){
+    console.log("for of loop:"+car);
+  }
+</script>
+
+<script>
+let person={
+  name:"lis",
+  age:34,
+  city:"mubai"
+};
+for (let key in person){
+  console.log(key +":"+ person[key]);
+}  
+</script>
+
+<script>
+  function greeting(name){
+    console.log("Hello,"+name+".!")
+  }
+  greeting("reddy");
+</script>
+
+<script>
+function add(a,b){
+  return a+b;
+}
+let result= add(5,7);
+console.log(result);
+</script>
+
+<script>
+  const person1 = {
+    firstName:"ziya",
+    lastName:"alice",
+    age:21,
+    isStudent:true,
+    sayhello: function(){console.log("hello! i'm ziya alice")}
+  }
+
+  const person2 ={
+    firstName:"lida",
+    lastName:"joe",
+    age:25,
+    isEmployed:true,
+    sayhello: function(){console.log("heyy..! i'm lida joe.")}
+  }
+  console.log(person1.firstName);
+    console.log(person1.lastName);
+      console.log(person1.age);
+        console.log(person1.isStudent);
+person1.sayhello();
+
+        console.log(person2.firstName);
+        console.log(person2.lastName);
+        console.log(person2.age);
+        console.log(person2.isEmployed);
+  person2.sayhello();
+</script>
+</body>
+</html>
