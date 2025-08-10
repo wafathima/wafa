@@ -52,13 +52,13 @@
     document.getElementById("demo5").innerHTML=result;
    </script>
 
- <h1>Java script Array</h1>
-  <h3>Array slice</h3>
+ <h1>Javascript Array</h1>
+  <h3>Array length</h3>
   <p id="demo4"></p>
   <script>
-    const fruits=["banana","apple","mango","watermelon"];
-    const orange= fruits.slice(2);
-    document.getElementById("demo4").innerHTML= fruits +"<br><br>"+orange;
+   const fruits=["banana","apple","mango","watermelon"];
+    let size= fruits.length;
+    document.getElementById("demo4").innerHTML= size;
   </script>
    
 
@@ -81,7 +81,7 @@
 <p id="demo8"></p>
 <script>
     const person3=["rani","liya","umar"];
-    person3.shift();
+    person3.shift(0);
     document.getElementById("demo8").innerHTML=person3;
 </script>
 
